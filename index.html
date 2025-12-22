@@ -8,8 +8,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -22,21 +26,21 @@
           <span class="cabecalho__hamburguer container__imagem"></span>
         </label>
         <ul class="lista-menu">
-          <li class="lista-menu__titulo"><a href="#">Categorias</a></li>
+          <li class="lista-menu__titulo">Categorias</li>
           <li class="lista-menu__item">
-            <a href="#">Programação</a>
+            <a class="lista-menu__link" href="#">Programação</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#">Front-end</a>
+            <a class="lista-menu__link" href="#">Front-end</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#">Infraestrutura</a>
+            <a class="lista-menu__link" href="#">Infraestrutura</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#">Business</a>
+            <a class="lista-menu__link" href="#">Business</a>
           </li>
           <li class="lista-menu__item">
-            <a href="#">Design & UX</a>
+            <a class="lista-menu__link" href="#">Design & UX</a>
           </li>
         </ul>
         <img
@@ -79,5 +83,55 @@
         />
       </p>
     </section>
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img
+              src="./assets/acessibilidade.svg"
+              alt="Livro sobre acessibilidade"
+            />
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/angular.svg" alt="Livro Angular" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/guia-front-end.svg" alt="Livro Guia Front-end" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/javascript.svg" alt="Livro JavaScript" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/liderança.svg" alt="Livro Liderança" />
+          </div>
+          <div class="swiper-slide">
+            <img src="/assets/ux.svg" alt="Livro UX" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".swiper", {
+        spaceBetween: 10,
+        slidesPerView: 3,
+        pagination: {
+          el: ".swiper-pagination",
+          type: "bullets",
+        },
+        
+      });
+    </script>
   </body>
 </html>
