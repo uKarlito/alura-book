@@ -8,6 +8,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
@@ -83,8 +87,11 @@
         />
       </p>
     </section>
+
+<!-- Primeiro Carrossel -->
+
     <section class="carrossel">
-      <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+      <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
       <!-- Slider main container -->
       <div class="swiper">
         <!-- Additional required wrapper -->
@@ -119,6 +126,135 @@
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
+
+      <div class="card">
+        <!-- 1 Linha -->
+        <div class="card__descricao">
+          <!-- 1 Coluna -->
+          <div class="descricao">
+            <h3 class="descricao__titulo">
+              Talvez você também se interesse por...
+            </h3>
+            <h2 class="descricao__titulo-livro">Angular 11 e Firebase</h2>
+            <p class="descricao__texto">
+              Construindo uma aplicação integrada com a plataforma do Google.
+            </p>
+          </div>
+          <!-- 2 Coluna -->
+          <img src="assets/card-angular.svg" class="descricao__imagem" />
+        </div>
+
+        <!-- 2 Linha-->
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="assets/heart.svg" alt="Favoritar livro"
+            </li>
+            <li class="botoes__item">
+              <img src="assets/bag.svg" alt="Adicionar ao carrinho"
+            </li>
+          </ul>
+          <!-- 2 Coluna-->
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+<!-- Segundo Carrossel -->
+
+    <section class="carrossel">
+      <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
+      <!-- Slider main container -->
+      <div class="swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-pagination"></div>
+
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="assets/Tuning.svg" alt="Livro sobre Tuning" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/Gestão2.svg" alt="Livro sobre Gestão" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/MEAN.svg" alt="Livro sobre MEAN" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/MetricasAgeis.svg" alt="Livro sobre Metricas Ageis" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/ReactNative.svg" alt="Livro sobre React Native" />
+          </div>
+          <div class="swiper-slide">
+            <img src="assets/ApacheKafka.svg" alt="Livro sobre ApacheKafka" />
+          </div>
+        </div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+
+      <div class="card">
+        <!-- 1 Linha -->
+        <div class="card__descricao">
+          <!-- 1 Coluna -->
+          <div class="descricao">
+            <img src="assets/Estrelinhas.svg" alt="Classificacao 5 estrelas" class="estrelas">
+            <h3 class="descricao__titulo2">
+              Autora do Mês
+            </h3>
+            <h2 class="descricao__titulo-livro2">Juliana Agarikov</h2>
+            <p class="descricao__texto2">
+              Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+            </p>
+          </div>
+          <!-- 2 Coluna -->
+          <img src="assets/Perfil-escritora 1.svg" class="descricao__imagem" />
+        </div>
+
+        <!-- 2 Linha-->
+        <div class="card__botoes">
+          <ul class="botoes">
+            <li class="botoes__item">
+              <img src="assets/heart.svg" alt="Favoritar livro"
+            </li>
+            <li class="botoes__item">
+              <img src="assets/bag.svg" alt="Adicionar ao carrinho"
+            </li>
+          </ul>
+          <!-- 2 Coluna-->
+          <a href="#" class="botoes__ancora">Saiba mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="topicos">
+      <h2 class="topicos__titulo">TÓPICOS VISITADOS RECENTEMENTE</h2>
+      <ul class="topicos__lista">
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Android</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Marcketing Digital</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Agile</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Startups</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">HTML e CSS</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Python</a>
+        </li>
+        <li class="topicos__item">
+          <a href="#" class="topicos__link">Orientação a Objetos</a>
+        </li>
+      </ul>
     </section>
 
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
@@ -130,7 +266,6 @@
           el: ".swiper-pagination",
           type: "bullets",
         },
-        
       });
     </script>
   </body>
