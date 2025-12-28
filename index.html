@@ -12,6 +12,10 @@
       rel="stylesheet"
     />
     <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
@@ -52,13 +56,41 @@
           alt="Logo AluraBook"
           class="container__imagem"
         />
+        <h1 class="container__titulo">
+          <b class="container__titulo--negrito">Alura</b>Books
+        </h1>
       </div>
+
+      <ul class="opcoes">
+        <input type="checkbox" id="opoces-menu" class="opoces__botao">
+        <label for="opoces-menu">
+                <li class="opcoes__item">Categorias</li>
+        </label>
+
+        <ul class="lista-menu">
+                <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Programação</a>
+                </li>
+                <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Front-end</a>
+                </li>
+                <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                </li>
+                <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Business</a>
+                </li>
+                <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Design & UX</a>
+                </li>
+        </ul>
+
       <div class="container">
         <a href="#"
           ><img
             src="assets/heart.svg"
             alt="Meus Favoritos"
-            class="container__imagem"
+            class="container__imagem container__imagem-transparente"
         /></a>
         <a href="#"
           ><img
@@ -88,7 +120,7 @@
       </p>
     </section>
 
-<!-- Primeiro Carrossel -->
+    <!-- Primeiro Carrossel -->
 
     <section class="carrossel">
       <h2 class="carrossel__titulo">ÚLTIMOS LANÇAMENTOS</h2>
@@ -160,7 +192,7 @@
       </div>
     </section>
 
-<!-- Segundo Carrossel -->
+    <!-- Segundo Carrossel -->
 
     <section class="carrossel">
       <h2 class="carrossel__titulo">MAIS VENDIDOS</h2>
@@ -181,7 +213,10 @@
             <img src="assets/MEAN.svg" alt="Livro sobre MEAN" />
           </div>
           <div class="swiper-slide">
-            <img src="assets/MetricasAgeis.svg" alt="Livro sobre Metricas Ageis" />
+            <img
+              src="assets/MetricasAgeis.svg"
+              alt="Livro sobre Metricas Ageis"
+            />
           </div>
           <div class="swiper-slide">
             <img src="assets/ReactNative.svg" alt="Livro sobre React Native" />
@@ -201,13 +236,16 @@
         <div class="card__descricao">
           <!-- 1 Coluna -->
           <div class="descricao">
-            <img src="assets/Estrelinhas.svg" alt="Classificacao 5 estrelas" class="estrelas">
-            <h3 class="descricao__titulo2">
-              Autora do Mês
-            </h3>
+            <img
+              src="assets/Estrelinhas.svg"
+              alt="Classificacao 5 estrelas"
+              class="estrelas"
+            />
+            <h3 class="descricao__titulo2">Autora do Mês</h3>
             <h2 class="descricao__titulo-livro2">Juliana Agarikov</h2>
             <p class="descricao__texto2">
-              Analista de sistemas e escritora, Juliana é especialista em Front-End. 
+              Analista de sistemas e escritora, Juliana é especialista em
+              Front-End.
             </p>
           </div>
           <!-- 2 Coluna -->
@@ -259,8 +297,14 @@
 
     <section class="contato">
       <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
-      <p class="contato__texto">Atualizações de e-books, novos livros, promoções e outros.</p>
-      <input type="email" placeholder="Cadastre seu email" class="contato__email">
+      <p class="contato__texto">
+        Atualizações de e-books, novos livros, promoções e outros.
+      </p>
+      <input
+        type="email"
+        placeholder="Cadastre seu email"
+        class="contato__email"
+      />
     </section>
 
     <hr/ class="hr">
